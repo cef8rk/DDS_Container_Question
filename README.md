@@ -1,6 +1,12 @@
 # DDS_Container_Question
 ***WARNING*** I messed up the password for clone.sh. it is theempiredidnothingwrong instead of empiredidnothingwrong
 
+***INSTALL LIST***
+python
+openssl
+docker/docker-compose
+lynx
+
 ***FILE LIST***
 This project includes the following files:
 1. Dockerfile: This file configures the docker container. Originally, the container ran only 
