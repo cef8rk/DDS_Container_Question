@@ -1,0 +1,1 @@
+lynx -dump $1
