@@ -14,11 +14,11 @@ This project includes the following files:
 3. localhost.conf: This file configures the apache server to display the admin directory files. It is configured to run over ssl. I did not have great success with getting 
 4. placeholdder.html: This file is a meaningless html page used to test the server. It is added to the container when the container is instantiated. It also exists to verify that clone works properly. It is placed in the admin repo on the container as "index.html".
 5. fdqn.conf: this file declares the server name as localhost. I will not pretend to know why it was suggest that I do this, but it was an attempt to remove the warning message that occurs during the build/run of the container. It never went away, but did not appear to affect the functionality of the container
-6. bin
+6. bin  
   a. install.sh: This file builds the docker container. (Note: I think I may have not done enough here. I am not sure what installs needed to be performed on each run (i.e. do all necessary resources need to be installed or is configuring the container sufficient?)  
-  b. start.sh: This file starts the docker container with docker compose up
-c. clone.sh: This file clones the repository currently in the admin repo on the container into the admin folder on the local machine
-d. push.sh: Takes a file name and pushes the file to the admin respository. Runs all .sh files in the repository and stores the results in index.html which is displayed by the webserver
+  b. start.sh: This file starts the docker container with docker compose up  
+  c. clone.sh: This file clones the repository currently in the admin repo on the container into the admin folder on the local machine  
+  d. push.sh: Takes a file name and pushes the file to the admin respository. Runs all .sh files in the repository and stores the results in index.html which is displayed by the webserver  
 
 7. gitea: This folder ended up being mostly unused (I still serve it on port 4443 to demonstrate what the UI would look like for a more complete and realistic solution to the problem of creating a locally hosted git server. Gitea isn't perfect but it is a relatively effective tool for developing a local git server. I did not employ it because it felt canned and because I wasn't sure what the parameters of the project were.
 
